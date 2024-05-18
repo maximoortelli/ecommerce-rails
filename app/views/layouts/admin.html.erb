@@ -14,13 +14,13 @@
   <body>
     <main class="flex">
         <nav class="flex w-full">
-             <div class="w-64 p-4 h-screen bg-gray-600 z-1 sticky top-0">
+             <div class="w-64 p-4 mb-2 h-screen bg-gray-600 z-1 sticky top-0">
                  <div class="flex">
-                     <%= image_tag 'logo.png', class:'w-16' %>
+                     <%= image_tag 'logo.png', class:'w-16 py-2' %>
                      <h1 class="text-sm py-2 ml-4 text-gray-50 font-bold hidden md:block">E-commerce Admin</h1>
                  </div>
                  <ul class="flex flex-col text-gray-50">
-                    <li>
+                    <li >
                         <%= link_to admin_path, class: "block px-4 py-2 hover:rounded hover:bg-gray-700" do %>
                         <%= icon('fa-solid', 'gauge-high', class: 'mr-2') %><span class="hidden md:inline-block">
                             Dashboard
@@ -37,7 +37,7 @@
                     <li>
                         <%= link_to admin_path, class: "block px-4 py-2 hover:rounded hover:bg-gray-700" do %>
                         <%= icon('fa-solid', 'list', class: 'mr-2') %><span class="hidden md:inline-block">
-                            Categorys
+                            Categories
                         </span>
                         <% end %>
                     </li>
